@@ -1,0 +1,79 @@
+The Four Color Theorem by Vaughn Komorech
+
+What is it?
+It is an overview of the Four Color Theorem which is a problem of coloring a planar graph using only four
+colors without adjacent vertices having the same color.
+
+Why?
+The Four Color Theorem is a problem which needed computer assistance to test a large quantity of test cases
+to help prove the theorem. This is like our proof which has a multitude of testcases we need to solve. 
+The author goes through Kempe's improper solution then goes over the proper solution which uses the same 
+process of reducing complex graphs into their simplest form then using a contradiction in  the 
+graph as a Reductio Ad Absurdum argument to find that if the graph isn't 4 colorable then it isn't a planar 
+graph, thus it must be 4 colorable. I believe this process might be similar to our endeavor. 
+We should try to use  Graph Theory and reductions to create an algorithmically optomized solution and maybe 
+try to find a contradiction type proof in one of our questions. 
+
+
+Games, Puzzles, and Computation by Robert Aubrey Hearn
+
+What is it?
+A book over puzzles, games, and their relation to computation. It also gives us a formalization of 
+definitions when talking about puzzles. 
+
+Why?
+This paper gives mathematical definitions to games and puzzles that will be useful in our discussion/process
+of solving our problems. It offers a ton of examples of different puzzles and games and the algorithmic 
+logical constraint programming for their solutions. 
+I think it'll be very important to study the mathematicians before us
+who've pathed the road of game theory so that we can avoid some of the mistakes they did, understand the
+process we need to take, and draw similarities between their puzzles and ours. I'm looking for mathematical 
+formalism so that we can formalize our problem solutions and findings. 
+
+Definitions?
+
+Deterministic Algorithm
+    An algorithm that will always produce the same output going through the same steps with a given input.
+    Ex. State machines, DFS maze solver, constraint propagation sudoku, back tracking with fixed cell sudoku
+Non-Deterministic Algorithm
+    An algorithm that will not always produce the same output going through the same steps with a given input.
+    Ex. Machine Learning black box type deals, black jack, randomness needed, randomly fill sudoku, A* with 
+    random tie breaking
+Constraint Logic
+    The rules defining legal moves on constraint graphs.
+    Ex. The movement of a bishop, a check rule on a king, the playing of a certain color in Uno
+Polynomial class
+    Dialectic solutions which are easy to find by a deterministic machine solved in polynomial time: O(c)
+    where c is constant, O(n), O(n^2), O(n^3), O(n^x) where x is a constant real number. 
+    Non Polynomial: O(2^n), O(n!), O(n^(log n)).    
+    Ex. Calculating GCD, Merge sort, maximum matching
+NP-Complete problems (Non-Deterministic, Polynomial time)
+    Problems in computation that can be solved in polynomial time by a non-deterministic machine and
+    can be verified in polynomial time by a deterministic machine. Not run a real computer but a turing machine.
+Solved (My definition)
+    A puzzle is either solved or not. If a puzzle is solved all the rules of the win condition
+    have been met following the set of Constraint Logic on the constraint graph.
+Unique
+    Only one solution exists that fulfills the puzzles win condition(s) whilst following the constraint logic
+    of the puzzle.  
+Solvability
+    Does the puzzle have a real logically fulfillable win condition found through following the constraint logic
+    of the puzzle? 
+Universal Quantifiers
+    All elements satisfy the condition.
+    Ex. For all x in P P(x) = 2y, y is an integer. For evens numbers.
+Existential Quantifiers
+    At least one element satisfies the condition.
+    Ex. for a set P = {2,3,5}, there exists an x in p such that P(x) = 2y, for some y that is an integer.
+Combinatorial Games:
+    Two player deterministic games with perfect information where players aternate moves, no randomness
+    Ex. Chess checkers
+Turing Machine
+    An abstract computational machine with assumed unlimited processing power and space. So the size of 
+    puzzle doesn't matter. 
+Findings?
+    The puzzle is P-Verifiable. 
+    We should look for a reduction: 6,1,0,5s are all good logical restraints. 
+    We should search for an NP-Complete proof. 
+    Currently with only a dfs search we have a non polynomial, non deterministic solution. 
+    Can arbitrary Boolean logic be simulated using overlapping hexagons? Can we reduce this puzzle?
